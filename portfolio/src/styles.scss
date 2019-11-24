@@ -115,3 +115,20 @@ p{
 #moreNutshell{
 	display:none;
 }
+
+.githubMainAvatar{
+    margin:15px;
+    border:1px solid black;
+}
+.githubMainAvatar:hover{
+    transform: rotate(-2deg);
+    transition: ease all 0.8s;
+}
+.secondaryAvatar{
+    width:75px;
+    border:1px solid rgba(0,0,0,0.5);
+}
+.secondaryAvatar:hover{
+    transform: rotate(-2deg);
+    transition: ease all 0.8s;
+}
