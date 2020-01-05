@@ -1,134 +1,149 @@
-*{
-	/* font-family: 'Anton', sans-serif; */
+* {
+  /* font-family: 'Anton', sans-serif; */
 }
-p{
-	font-weight:normal;
+
+p {
+  font-weight: normal;
 }
+
 .container-content {
-    background-color: #4e5d6c;
+  background-color: #4e5d6c;
 }
-.jumbotron{
-	background-color:#0B2F63;
-	color: white;
-	margin-bottom:0;
+
+.jumbotron {
+  background-color: #0B2F63;
+  color: white;
+  margin-bottom: 0;
 }
+
 .glyphicon-heading {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 #cSharp {
-    height: 160px;
-    width: 160px;
-    background-color: transparent;
-    /*background-color: #4E5D6C;*/
-    text-align: right;
-    vertical-align: bottom;
-    font-size: 150px;
-    line-height: 150px;
-    font-family: Calibri;
-    font-weight: bold;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 3px solid white;
+  height: 160px;
+  width: 160px;
+  background-color: transparent;
+  /*background-color: #4E5D6C;*/
+  text-align: right;
+  vertical-align: bottom;
+  font-size: 150px;
+  line-height: 150px;
+  font-family: Calibri;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid white;
 }
 
 .slideanim {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
 }
 
 .topic {
-    transition: ease all 0.3s;
-    background-color: rgba(0,0,0,0.4) !important;
+  transition: ease all 0.3s;
+  background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-    .topic:hover, .topic:active {
-        /*transform: scale(1.15);*/
-        box-shadow: 0px 0px 10px white;
-        background-color: rgba(0,0,0,0.6) !important;
-    }
+.topic:hover,
+.topic:active {
+  /*transform: scale(1.15);*/
+  box-shadow: 0px 0px 10px white;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
 
 .topicContainer {
-    margin-bottom: 4%;
+  margin-bottom: 4%;
 }
 
-    .topicContainer h3 {
-        height: 50px;
-        width: auto;
-        background-color: transparent;
-        text-align: center;
-        color:white;
-        font-size: 30px;
-        line-height: 45px;
-        font-family: Calibri;
-        font-weight: bold;
-        display: block;
-        border: 2px solid white;
-    }
+.topicContainer h3 {
+  height: 50px;
+  width: auto;
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  line-height: 45px;
+  font-family: Calibri;
+  font-weight: bold;
+  display: block;
+  border: 2px solid white;
+}
 
 .contentAlt {
-    background-color: #0B2F63;
+  background-color: #0B2F63;
 }
 
-#snippetsDiv, #findMeDiv {
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* Set a specific height */
-    height: auto;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#snippetsDiv,
+#findMeDiv {
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Set a specific height */
+  height: auto;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #snippetsDiv {
-    background-image: url('assets/images/canstockphoto24502868.jpg');
+  background-image: url('assets/images/canstockphoto24502868.jpg');
 }
 
 #findMeDiv {
-    background-image: url('assets/images/canstockphoto615505.jpg');
+  background-image: url('assets/images/canstockphoto615505.jpg');
 }
 
-    /*#findMe .topicContainer {
+/*#findMe .topicContainer {
         border: 2px solid white;
     }*/
 
 .lightHeading {
-	color:white;
-    text-shadow: 3px 0px 2px #000;
+  color: white;
+  text-shadow: 3px 0px 2px #000;
 }
 
-.panel{
-    border:2px solid white;
-}
+// .panel {
+//   border: 2px solid white;
+// }
 
 /*HOME PAGE INTERACTIVES*/
-#moreNutshell{
-	display:none;
+#moreNutshell {
+  display: none;
 }
 
-.githubMainAvatar{
-    margin:15px;
-    border:1px solid black;
+.githubMainAvatar {
+  margin: 15px;
+  border: 1px solid black;
 }
-.githubMainAvatar:hover{
-    transform: rotate(-2deg);
-    transition: ease all 0.8s;
+
+.githubMainAvatar:hover {
+  transform: rotate(-2deg);
+  transition: ease all 0.8s;
 }
-.secondaryAvatar{
-    width:75px;
-    border:1px solid rgba(0,0,0,0.5);
+
+.secondaryAvatar {
+  width: 75px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
-.secondaryAvatar:hover{
-    transform: rotate(-2deg);
-    transition: ease all 0.8s;
+
+.secondaryAvatar:hover {
+  transform: rotate(-2deg);
+  transition: ease all 0.8s;
+}
+
+.panel {
+  border-radius: 0 !important;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  //   box-shadow: 0px 0px 10px white;
 }
