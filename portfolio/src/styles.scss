@@ -11,9 +11,10 @@ p {
 }
 
 .jumbotron {
-  background-color: #0B2F63;
+  background-color: #2e5797;
   color: white;
   margin-bottom: 0;
+  margin-top: 2em;
 }
 
 .glyphicon-heading {
@@ -51,14 +52,14 @@ p {
 
 .topic {
   transition: ease all 0.3s;
-  background-color: rgba(0, 0, 0, 0.4) !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 .topic:hover,
 .topic:active {
   /*transform: scale(1.15);*/
   box-shadow: 0px 0px 10px white;
-  background-color: rgba(0, 0, 0, 0.6) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 .topicContainer {
@@ -87,10 +88,6 @@ p {
   background-color: #ffffff;
 }
 
-#top {
-  box-shadow: inset 0px -5px 20px black;
-}
-
 #snippetsDiv,
 #findMeDiv {
   background-repeat: no-repeat;
@@ -108,13 +105,8 @@ p {
   background-image: url('assets/images/canstockphoto24502868.jpg');
 }
 
-.knowMeContent {
-  box-shadow: 10px -5px 20px black;
-}
-
 #findMeDiv {
   background-image: url('assets/images/canstockphoto615505.jpg');
-  box-shadow: 10px -5px 20px black;
 }
 
 /*#findMe .topicContainer {
@@ -123,7 +115,7 @@ p {
 
 .lightHeading {
   color: white;
-  text-shadow: 3px 0px 2px #000;
+  stroke: 2px #000;
 }
 
 // .panel {
@@ -156,7 +148,5 @@ p {
 }
 
 .panel {
-  // border-radius: 0 !important;
-  // border: 2px solid rgba(0, 0, 0, 0.4);
-  //   box-shadow: 0px 0px 10px white;
+  box-shadow: none !important;
 }

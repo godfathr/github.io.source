@@ -3,7 +3,6 @@
     <div class="container">
         <div class="row">
             <h2 class="lightHeading">Find Me</h2>
-            <hr />
             <div class="row">
                 <div class="col-md-12 topicContainer">
                     <div class="panel panel-default">
@@ -15,27 +14,22 @@
                             <div class="row">
                                 <div class="col-sm-12 col-md-6">
                                     <a href='{{response.html_url}}' target="_blank">
-                                        <img src="{{response.avatar_url}}" alt="avatar" aria-hidden="true"
-                                            class="githubMainAvatar" />
+                                        <img src="{{response.avatar_url}}" alt="avatar" aria-hidden="true" class="githubMainAvatar" />
                                     </a>
                                 </div>
                                 <div class="col-sm-12 col-md-6 text-left">
                                     <h2>{{response.login}}</h2>
                                     <p><a href='{{response.html_url}}' target="_blank">{{response.html_url}}</a></p>
-                                    <p><a href='https://github.com/godfathr?tab=repositories'
-                                            target="_blank">https://github.com/godfathr?tab=repositories</a>
+                                    <p><a href='https://github.com/godfathr?tab=repositories' target="_blank">https://github.com/godfathr?tab=repositories</a>
                                         ({{response.public_repos}})</p>
                                     <h4>Followers: ({{response.followers}})</h4>
                                     <ng-container *ngIf="followers">
                                         <div class="row">
                                             <ng-container *ngFor="let follower of followers">
                                                 <div class="col-xs-6 col-sm-3 col-md-3 text-center">
-                                                    <a href="{{ follower.html_url }}" target="_blank"><img
-                                                            src="{{ follower.avatar_url }}" alt="{{ follower.login }}"
-                                                            class="secondaryAvatar" />
+                                                    <a href="{{ follower.html_url }}" target="_blank"><img src="{{ follower.avatar_url }}" alt="{{ follower.login }}" class="secondaryAvatar" />
                                                     </a>
-                                                    <p><a href="{{ follower.html_url }}"
-                                                            target="_blank">{{ follower.login}}</a>
+                                                    <p><a href="{{ follower.html_url }}" target="_blank">{{ follower.login}}</a>
                                                     </p>
                                                 </div>
                                             </ng-container>
@@ -56,10 +50,7 @@
                     </div>
                     <div class="panel-body">
                         <a href="http://stackoverflow.com/users/7109850/godfathr" target="_blank">
-                            <img src="http://stackoverflow.com/users/flair/7109850.png?theme=dark" width="208"
-                                height="58"
-                                alt="profile for godfathr at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
-                                title="profile for godfathr at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+                            <img src="http://stackoverflow.com/users/flair/7109850.png?theme=dark" width="208" height="58" alt="profile for godfathr at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for godfathr at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
                         </a>
                     </div>
                 </div>
@@ -71,8 +62,7 @@
                     </div>
                     <div class="panel-body">
                         <a href="https://www.linkedin.com/in/mikalgrant/" target="_blank">
-                            <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png"
-                                width="160" height="33" border="0" alt="View Mikal Grant's profile on LinkedIn">
+                            <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Mikal Grant's profile on LinkedIn">
                         </a>
                     </div>
                 </div>
