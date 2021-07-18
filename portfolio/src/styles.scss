@@ -34,26 +34,53 @@ html {
 #page-content {
   margin: 10rem auto 10rem auto;
   width: 80%;
+  max-width: 1000px;
   min-height: 300px; // for development only
   background-color: #194180;
+  transition: 1s all ease-in-out;
+  padding-top: 1rem;
+  padding-bottom: 0;
 }
 
 .intro {}
 
 .my-face {
+  float: left;
+  border: 0.5rem solid #0C2F66;
   height: 20rem;
   width: 20rem;
+  max-height: 200px;
+  max-width: 200px;
   border-radius: 20rem;
   background-color: #6F8FC2;
   position: relative;
   left: -5rem;
   top: -5rem;
   transition: 1s all ease-in-out;
+  background-image: url("https://avatars.githubusercontent.com/u/17180852?v=4");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  padding: 2rem;
+  width: 100%;
+
+}
+
+.content-light {
+  background-color: #6F8FC2;
+}
+
+.content-transparent {
+  background-color: transparent;
 }
 
 /*new-design mobile styles*/
 @media screen and (max-width:999px) {
   #page-content {
+    margin: 5rem auto 5rem auto;
     width: 70%;
   }
 
@@ -72,6 +99,17 @@ html {
   }
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
+.page-heading {
+  //float: left;
+}
+
+h1 {
+  font-size: 3rem;
+}
 
 /* ------------ old site ---------------*/
 // * {
