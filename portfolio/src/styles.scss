@@ -1,152 +1,228 @@
+// // As hex codes */
+
+// $color-primary-0: #2E5797; // Main Primary color */
+// $color-primary-1: #6F8FC2;
+// $color-primary-2: #476BA5;
+// $color-primary-3: #194180;
+// $color-primary-4: #0C2F66;
+
+
+
+// // As RGBa codes */
+
+// $rgba-primary-0: rgba(46, 87, 151, 1); // Main Primary color */
+// $rgba-primary-1: rgba(111, 143, 194, 1);
+// $rgba-primary-2: rgba(71, 107, 165, 1);
+// $rgba-primary-3: rgba(25, 65, 128, 1);
+// $rgba-primary-4: rgba(12, 47, 102, 1);
+
+*::before,
+*::after,
 * {
-  /* font-family: 'Anton', sans-serif; */
+  box-sizing: border-box;
+  font-family: 'Arial',
+    sans-serif;
 }
 
-p {
-  font-weight: normal;
-}
-
-.container-content {
-  background-color: #4e5d6c;
-}
-
-.jumbotron {
-  background-color: #2e5797;
+body,
+html {
+  background-color: #2E5797;
   color: white;
-  margin-bottom: 0;
-  margin-top: 2em;
+  font-size: 14px;
 }
 
-.glyphicon-heading {
-  font-size: 3em;
+#page-content {
+  margin: 10rem auto 10rem auto;
+  width: 80%;
+  min-height: 300px; // for development only
+  background-color: #194180;
 }
 
-#cSharp {
-  height: 160px;
-  width: 160px;
-  background-color: transparent;
-  /*background-color: #4E5D6C;*/
-  text-align: right;
-  vertical-align: bottom;
-  font-size: 150px;
-  line-height: 150px;
-  font-family: Calibri;
-  font-weight: bold;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px solid white;
+.intro {}
+
+.my-face {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 20rem;
+  background-color: #6F8FC2;
+  position: relative;
+  left: -5rem;
+  top: -5rem;
+  transition: 1s all ease-in-out;
 }
 
-.slideanim {
-  visibility: hidden;
+/*new-design mobile styles*/
+@media screen and (max-width:999px) {
+  #page-content {
+    width: 70%;
+  }
+
+  .my-face {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10rem;
+    left: -3rem;
+    top: -3rem;
+  }
 }
 
-.slide {
-  animation-name: slide;
-  -webkit-animation-name: slide;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  visibility: visible;
+@media screen and (max-width:550px) {
+  #page-content {
+    width: 60%;
+  }
 }
 
-.topic {
-  transition: ease all 0.3s;
-  background-color: rgba(0, 0, 0, 0.8) !important;
-}
 
-.topic:hover,
-.topic:active {
-  /*transform: scale(1.15);*/
-  box-shadow: 0px 0px 10px white;
-  background-color: rgba(0, 0, 0, 0.4) !important;
-}
+/* ------------ old site ---------------*/
+// * {
+//   /* font-family: 'Anton', sans-serif; */
+// }
 
-.topicContainer {
-  margin-bottom: 4%;
-}
+// p {
+//   font-weight: normal;
+// }
 
-.topicContainer h3 {
-  height: 50px;
-  width: auto;
-  background-color: transparent;
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  line-height: 45px;
-  font-family: Calibri;
-  font-weight: bold;
-  display: block;
-  border: 2px solid white;
-}
+// .container-content {
+//   background-color: #4e5d6c;
+// }
 
-.contentAltBlueBackground {
-  background-color: #0B2F63;
-}
+// .jumbotron {
+//   background-color: #2e5797;
+//   color: white;
+//   margin-bottom: 0;
+//   margin-top: 2em;
+// }
 
-.contentAltWhiteBackground {
-  background-color: #ffffff;
-}
+// .glyphicon-heading {
+//   font-size: 3em;
+// }
 
-#snippetsDiv,
-#findMeDiv {
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* Set a specific height */
-  height: auto;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// #cSharp {
+//   height: 160px;
+//   width: 160px;
+//   background-color: transparent;
+//   /*background-color: #4E5D6C;*/
+//   text-align: right;
+//   vertical-align: bottom;
+//   font-size: 150px;
+//   line-height: 150px;
+//   font-family: Calibri;
+//   font-weight: bold;
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+//   border: 3px solid white;
+// }
 
-#snippetsDiv {
-  background-image: url('assets/images/canstockphoto24502868.jpg');
-}
+// .slideanim {
+//   visibility: hidden;
+// }
 
-#findMeDiv {
-  background-image: url('assets/images/canstockphoto615505.jpg');
-}
+// .slide {
+//   animation-name: slide;
+//   -webkit-animation-name: slide;
+//   animation-duration: 1s;
+//   -webkit-animation-duration: 1s;
+//   visibility: visible;
+// }
 
-/*#findMe .topicContainer {
-        border: 2px solid white;
-    }*/
+// .topic {
+//   transition: ease all 0.3s;
+//   background-color: rgba(0, 0, 0, 0.8) !important;
+// }
 
-.lightHeading {
-  color: white;
-  stroke: 2px #000;
-}
+// .topic:hover,
+// .topic:active {
+//   /*transform: scale(1.15);*/
+//   box-shadow: 0px 0px 10px white;
+//   background-color: rgba(0, 0, 0, 0.4) !important;
+// }
 
-// .panel {
+// .topicContainer {
+//   margin-bottom: 4%;
+// }
+
+// .topicContainer h3 {
+//   height: 50px;
+//   width: auto;
+//   background-color: transparent;
+//   text-align: center;
+//   color: white;
+//   font-size: 30px;
+//   line-height: 45px;
+//   font-family: Calibri;
+//   font-weight: bold;
+//   display: block;
 //   border: 2px solid white;
 // }
 
-/*HOME PAGE INTERACTIVES*/
-#moreNutshell {
-  display: none;
-}
+// .contentAltBlueBackground {
+//   background-color: #0B2F63;
+// }
 
-.githubMainAvatar {
-  margin: 15px;
-  border: 1px solid black;
-}
+// .contentAltWhiteBackground {
+//   background-color: #ffffff;
+// }
 
-.githubMainAvatar:hover {
-  transform: rotate(-2deg);
-  transition: ease all 0.8s;
-}
+// #snippetsDiv,
+// #findMeDiv {
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   /* Set a specific height */
+//   height: auto;
+//   /* Create the parallax scrolling effect */
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
-.secondaryAvatar {
-  width: 75px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-}
+// #snippetsDiv {
+//   background-image: url('assets/images/canstockphoto24502868.jpg');
+// }
 
-.secondaryAvatar:hover {
-  transform: rotate(-2deg);
-  transition: ease all 0.8s;
-}
+// #findMeDiv {
+//   background-image: url('assets/images/canstockphoto615505.jpg');
+// }
 
-.panel {
-  box-shadow: none !important;
-}
+// /*#findMe .topicContainer {
+//         border: 2px solid white;
+//     }*/
+
+// .lightHeading {
+//   color: white;
+//   stroke: 2px #000;
+// }
+
+// // .panel {
+// //   border: 2px solid white;
+// // }
+
+// /*HOME PAGE INTERACTIVES*/
+// #moreNutshell {
+//   display: none;
+// }
+
+// .githubMainAvatar {
+//   margin: 15px;
+//   border: 1px solid black;
+// }
+
+// .githubMainAvatar:hover {
+//   transform: rotate(-2deg);
+//   transition: ease all 0.8s;
+// }
+
+// .secondaryAvatar {
+//   width: 75px;
+//   border: 1px solid rgba(0, 0, 0, 0.5);
+// }
+
+// .secondaryAvatar:hover {
+//   transform: rotate(-2deg);
+//   transition: ease all 0.8s;
+// }
+
+// .panel {
+//   box-shadow: none !important;
+// }
