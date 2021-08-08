@@ -1,12 +1,20 @@
+@import "../../../styles-colors.scss";
 
+$profile-image-size: 20em;
 
 #profile-image{
-    height:20rem;
-    width:20rem;
-    border-radius:20rem;
-    background-repeat:no-repeat;
+    height:$profile-image-size;
+    width:$profile-image-size;
+    border-radius:50%;
+    background-color: $color-primary-5;
     background-image:url('https://avatars.githubusercontent.com/u/17180852?v=4');
+    background-repeat:no-repeat;
     background-position:center;
+    background-size: cover;
     position:relative;
     z-index:9999;
+    left: -12em;
+    top: -5em;
+    transition: 1s all ease-in-out;
+    display:inline-block;
 }
