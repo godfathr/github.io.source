@@ -11,6 +11,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { HelloComponent } from './components/hello/hello.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CommonModule } from '@angular/common';
     KnowMeComponent,
     FindMeComponent,
     NavigationComponent,
-    FooterComponent
+    FooterComponent,
+    HelloComponent
   ],
   imports: [
     BrowserModule,

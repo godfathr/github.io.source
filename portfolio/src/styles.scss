@@ -1,152 +1,178 @@
-* {
-  /* font-family: 'Anton', sans-serif; */
+/*
+$color-primary-0: #2D5794;
+$color-primary-1: #6E8EBF;
+$color-primary-2: #466BA2;
+$color-primary-3: #19417D;
+$color-primary-4: #0B2E63;
+*/
+
+body{
+  background-color: #2D5794;
+  color: white;
+  margin-bottom: 0;
+  margin:0;
+  height:100vh;
+  margin-top: 2em;
+}
+
+*, *:before, *:after {
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
 }
 
 p {
   font-weight: normal;
 }
 
-.container-content {
-  background-color: #4e5d6c;
+.content-wrapper{
+  background-color:#0B2E63;
+  margin: 0 auto;
+  width: 80%;
 }
 
-.jumbotron {
-  background-color: #2e5797;
-  color: white;
-  margin-bottom: 0;
-  margin-top: 2em;
-}
+/*-----------------old site---------------*/
 
-.glyphicon-heading {
-  font-size: 3em;
-}
+// .container-content {
+//   background-color: #4e5d6c;
+// }
 
-#cSharp {
-  height: 160px;
-  width: 160px;
-  background-color: transparent;
-  /*background-color: #4E5D6C;*/
-  text-align: right;
-  vertical-align: bottom;
-  font-size: 150px;
-  line-height: 150px;
-  font-family: Calibri;
-  font-weight: bold;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 3px solid white;
-}
+// .jumbotron {
+//   background-color: #2e5797;
+//   color: white;
+//   margin-bottom: 0;
+//   margin-top: 2em;
+// }
 
-.slideanim {
-  visibility: hidden;
-}
+// .glyphicon-heading {
+//   font-size: 3em;
+// }
 
-.slide {
-  animation-name: slide;
-  -webkit-animation-name: slide;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  visibility: visible;
-}
+// #cSharp {
+//   height: 160px;
+//   width: 160px;
+//   background-color: transparent;
+//   /*background-color: #4E5D6C;*/
+//   text-align: right;
+//   vertical-align: bottom;
+//   font-size: 150px;
+//   line-height: 150px;
+//   font-family: Calibri;
+//   font-weight: bold;
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+//   border: 3px solid white;
+// }
 
-.topic {
-  transition: ease all 0.3s;
-  background-color: rgba(0, 0, 0, 0.8) !important;
-}
+// .slideanim {
+//   visibility: hidden;
+// }
 
-.topic:hover,
-.topic:active {
-  /*transform: scale(1.15);*/
-  box-shadow: 0px 0px 10px white;
-  background-color: rgba(0, 0, 0, 0.4) !important;
-}
+// .slide {
+//   animation-name: slide;
+//   -webkit-animation-name: slide;
+//   animation-duration: 1s;
+//   -webkit-animation-duration: 1s;
+//   visibility: visible;
+// }
 
-.topicContainer {
-  margin-bottom: 4%;
-}
+// .topic {
+//   transition: ease all 0.3s;
+//   background-color: rgba(0, 0, 0, 0.8) !important;
+// }
 
-.topicContainer h3 {
-  height: 50px;
-  width: auto;
-  background-color: transparent;
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  line-height: 45px;
-  font-family: Calibri;
-  font-weight: bold;
-  display: block;
-  border: 2px solid white;
-}
+// .topic:hover,
+// .topic:active {
+//   /*transform: scale(1.15);*/
+//   box-shadow: 0px 0px 10px white;
+//   background-color: rgba(0, 0, 0, 0.4) !important;
+// }
 
-.contentAltBlueBackground {
-  background-color: #0B2F63;
-}
+// .topicContainer {
+//   margin-bottom: 4%;
+// }
 
-.contentAltWhiteBackground {
-  background-color: #ffffff;
-}
-
-#snippetsDiv,
-#findMeDiv {
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* Set a specific height */
-  height: auto;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#snippetsDiv {
-  background-image: url('assets/images/canstockphoto24502868.jpg');
-}
-
-#findMeDiv {
-  background-image: url('assets/images/canstockphoto615505.jpg');
-}
-
-/*#findMe .topicContainer {
-        border: 2px solid white;
-    }*/
-
-.lightHeading {
-  color: white;
-  stroke: 2px #000;
-}
-
-// .panel {
+// .topicContainer h3 {
+//   height: 50px;
+//   width: auto;
+//   background-color: transparent;
+//   text-align: center;
+//   color: white;
+//   font-size: 30px;
+//   line-height: 45px;
+//   font-family: Calibri;
+//   font-weight: bold;
+//   display: block;
 //   border: 2px solid white;
 // }
 
-/*HOME PAGE INTERACTIVES*/
-#moreNutshell {
-  display: none;
-}
+// .contentAltBlueBackground {
+//   background-color: #0B2F63;
+// }
 
-.githubMainAvatar {
-  margin: 15px;
-  border: 1px solid black;
-}
+// .contentAltWhiteBackground {
+//   background-color: #ffffff;
+// }
 
-.githubMainAvatar:hover {
-  transform: rotate(-2deg);
-  transition: ease all 0.8s;
-}
+// #snippetsDiv,
+// #findMeDiv {
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   /* Set a specific height */
+//   height: auto;
+//   /* Create the parallax scrolling effect */
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
-.secondaryAvatar {
-  width: 75px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-}
+// #snippetsDiv {
+//   background-image: url('assets/images/canstockphoto24502868.jpg');
+// }
 
-.secondaryAvatar:hover {
-  transform: rotate(-2deg);
-  transition: ease all 0.8s;
-}
+// #findMeDiv {
+//   background-image: url('assets/images/canstockphoto615505.jpg');
+// }
 
-.panel {
-  box-shadow: none !important;
-}
+// /*#findMe .topicContainer {
+//         border: 2px solid white;
+//     }*/
+
+// .lightHeading {
+//   color: white;
+//   stroke: 2px #000;
+// }
+
+// // .panel {
+// //   border: 2px solid white;
+// // }
+
+// /*HOME PAGE INTERACTIVES*/
+// #moreNutshell {
+//   display: none;
+// }
+
+// .githubMainAvatar {
+//   margin: 15px;
+//   border: 1px solid black;
+// }
+
+// .githubMainAvatar:hover {
+//   transform: rotate(-2deg);
+//   transition: ease all 0.8s;
+// }
+
+// .secondaryAvatar {
+//   width: 75px;
+//   border: 1px solid rgba(0, 0, 0, 0.5);
+// }
+
+// .secondaryAvatar:hover {
+//   transform: rotate(-2deg);
+//   transition: ease all 0.8s;
+// }
+
+// .panel {
+//   box-shadow: none !important;
+// }
