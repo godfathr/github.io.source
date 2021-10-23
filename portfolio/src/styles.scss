@@ -1,5 +1,5 @@
-* {
-  /* font-family: 'Anton', sans-serif; */
+body {
+  position: relative;
 }
 
 p {
@@ -72,7 +72,7 @@ p {
   background-color: transparent;
   text-align: center;
   color: white;
-  font-size: 30px;
+  font-size: 1em;
   line-height: 45px;
   font-family: Calibri;
   font-weight: bold;
