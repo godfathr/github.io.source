@@ -17,6 +17,14 @@ p {
   padding: 2em 0;
 }
 
+.row-alt{
+   background-color: #2e5797;
+   color:#ffffff;
+}
+.row-primary, .row-alt{
+  padding: 2rem 0;
+}
+
 h2{
   padding: 1rem 0;
 }
@@ -128,10 +136,6 @@ h2{
 // }
 
 /*HOME PAGE INTERACTIVES*/
-#moreNutshell {
-  display: none;
-}
-
 .githubMainAvatar {
   margin: 15px;
   border: 1px solid black;
@@ -154,4 +158,9 @@ h2{
 
 .panel {
   box-shadow: none !important;
+}
+
+.button-icon{
+  line-height: 1rem;
+  font-size: 1rem;
 }

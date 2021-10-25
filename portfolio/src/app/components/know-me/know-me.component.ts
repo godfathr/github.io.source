@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KnowMeComponent implements OnInit {
 
+  public displayMoreNutshell: boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public toggleMoreNutshell() {
+    this.displayMoreNutshell = !this.displayMoreNutshell;
   }
 
 }
