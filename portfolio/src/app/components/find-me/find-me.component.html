@@ -1,41 +1,53 @@
 <span id="findMe"></span>
-<div id="findMeDiv" class="container-fluid text-center">
-    <div class="container">
+<div id="findMeDiv" class="container-fluid justify-content-center">
+    <div class="container" style="padding-top:1rem;">
         <div class="row">
-            <h2 class="lightHeading">Find Me</h2>
-            <div class="row">
-                <div class="col-md-12 topicContainer">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
+            <!-- <h2 class="lightHeading">Find Me</h2> -->
+            <div class="col-md-12 topicContainer">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
                             <h4>Github</h4>
                         </div>
                         <ng-container *ngIf="response">
                             <!--need to only display the interpolation elements below when we have a response. otherwise, we will get an error in the browser console stating it can't find a property of 'undefined' since there is no response object until we click the button-->
                             <div class="row">
-                                <div class="col-sm-12 col-md-6">
+                                <div class="col-md-12">
                                     <a href='{{response.html_url}}' target="_blank">
                                         <img src="{{response.avatar_url}}" alt="avatar" aria-hidden="true" class="githubMainAvatar" />
                                     </a>
+                                    <h5>{{response.login}}</h5>
+
+                                    <a class="btn btn-dark btn-lg mr-1" href='{{response.html_url}}' target="_blank">
+                                        My Github Profile
+                                        <i class="material-icons" style="line-height:1.9rem;">
+                                            open_in_new
+                                        </i>
+                                    </a>
+                                    <a href='https://github.com/godfathr?tab=repositories' class="btn btn-dark btn-lg mr-1" target="_blank">
+                                        My Github Repositories
+                                        <i class="material-icons mr-1" style="line-height:1.9rem;">
+                                            open_in_new
+                                        </i>
+                                    </a>
+                                    ({{response.public_repos}})
+
                                 </div>
-                                <div class="col-sm-12 col-md-6 text-left">
-                                    <h2>{{response.login}}</h2>
-                                    <p><a href='{{response.html_url}}' target="_blank">{{response.html_url}}</a></p>
-                                    <p><a href='https://github.com/godfathr?tab=repositories' target="_blank">https://github.com/godfathr?tab=repositories</a>
-                                        ({{response.public_repos}})</p>
-                                    <h4>Followers: ({{response.followers}})</h4>
-                                    <ng-container *ngIf="followers">
-                                        <div class="row">
-                                            <ng-container *ngFor="let follower of followers">
-                                                <div class="col-xs-6 col-sm-3 col-md-3 text-center">
-                                                    <a href="{{ follower.html_url }}" target="_blank"><img src="{{ follower.avatar_url }}" alt="{{ follower.login }}" class="secondaryAvatar" />
-                                                    </a>
-                                                    <p><a href="{{ follower.html_url }}" target="_blank">{{ follower.login}}</a>
-                                                    </p>
-                                                </div>
-                                            </ng-container>
+                                <h6>Followers: ({{response.followers}})</h6>
+                                <ng-container *ngIf="followers">
+                                    <!-- <div class="row"> -->
+                                    <ng-container *ngFor="let follower of followers">
+                                        <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                                            <a href="{{ follower.html_url }}" target="_blank"><img src="{{ follower.avatar_url }}" alt="{{ follower.login }}" class="secondaryAvatar" />
+                                            </a>
+                                            <p><a href="{{ follower.html_url }}" target="_blank">{{ follower.login}}</a>
+                                            </p>
                                         </div>
                                     </ng-container>
-                                </div>
+                                    <!-- </div> -->
+                                </ng-container>
+                                <!-- <div class="col-sm-12 col-md-6 justify-content-left">
+                                    </div> -->
                             </div>
                         </ng-container>
                     </div>
@@ -44,11 +56,11 @@
         </div>
         <div class="row slideanim slide">
             <div class="col-xs-12 col-sm-12 col-md-6 topicContainer">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4>Stack Overflow</h4>
-                    </div>
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h4>Stack Overflow</h4>
+                        </div>
                         <a href="http://stackoverflow.com/users/7109850/godfathr" target="_blank">
                             <img src="http://stackoverflow.com/users/flair/7109850.png?theme=dark" width="208" height="58" alt="profile for godfathr at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for godfathr at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
                         </a>
@@ -56,11 +68,11 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 topicContainer">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4>LinkedIn</h4>
-                    </div>
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h4>LinkedIn</h4>
+                        </div>
                         <a href="https://www.linkedin.com/in/mikalgrant/" target="_blank">
                             <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Mikal Grant's profile on LinkedIn">
                         </a>
