@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/godfathr/github.io.source/issues"
   },
-  "homepage": "https://github.com/godfathr/github.io.source#readme"
+  "homepage": "https://github.com/godfathr/github.io.source#readme",
+  "dependencies": {
+    "@angular/cli": "^13.3.0"
+  }
 }
