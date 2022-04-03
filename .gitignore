@@ -3,4 +3,4 @@
 *.txt
 *.bak
 node_modules
-.angular
+portfolio/.angular/*
