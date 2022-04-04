@@ -6,16 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./know-me.component.scss']
 })
 export class KnowMeComponent implements OnInit {
-
-  public displayMoreNutshell: boolean = false;
-
   constructor() { }
 
-  ngOnInit() {
-  }
-
-  public toggleMoreNutshell() {
-    this.displayMoreNutshell = !this.displayMoreNutshell;
-  }
-
+  ngOnInit() { }
 }
