@@ -4,7 +4,7 @@ html {
 
 body {
   position: relative;
-  font-size:16px;
+  font-size: 16px;
 }
 
 p {
@@ -22,15 +22,17 @@ p {
   padding: 2em 0;
 }
 
-.row-alt{
-   background-color: #2e5797;
-   color:#ffffff;
+.row-alt {
+  background-color: transparent;
+  color: #ffffff;
 }
-.row-primary, .row-alt{
+
+.row-primary,
+.row-alt {
   padding: 2rem 0;
 }
 
-h2{
+h2 {
   padding: 1rem 0;
 }
 
@@ -165,7 +167,35 @@ h2{
   box-shadow: none !important;
 }
 
-.button-icon{
+.button-icon {
   line-height: 1rem;
   font-size: 1rem;
+}
+
+
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.white-text{
+  color:white;
+}
+.white-text:hover{
+  color:rgba(255,255,255,0.8);
+}
+
+.bold-text{
+  font-weight: bold;
+}
+
+.interactive-element:hover{
+  cursor: pointer;
 }
