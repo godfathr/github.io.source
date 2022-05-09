@@ -4,23 +4,29 @@
       <div>
         <h3 class="float-md-start mb-0 text-uppercase">godfathr</h3>
         <nav class="nav nav-masthead justify-content-center float-md-end">
-          <a class="nav-link active" aria-current="page" href="#">Featured Work</a>
-          <a class="nav-link" href="#">Tools & Experience</a>
-          <a class="nav-link" href="#">About</a>
-          <a class="nav-link" href="#">Find Me</a>
+          <a class="nav-link active" aria-current="page" href="/" routerLinkActive="active">
+            Home
+          </a>
+          <a class="nav-link" routerLink="/intro" routerLinkActive="active">
+            Intro
+          </a>
+          <a class="nav-link" routerLink="/featured" routerLinkActive="active">
+            Featured Work
+          </a>
+          <a class="nav-link" routerLink="/experience" routerLinkActive="active">
+            Tools & Experience
+          </a>
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">
+            About
+          </a>
+          <a class="nav-link" routerLink="/find-me" routerLinkActive="active">
+            Find Me
+          </a>
         </nav>
       </div>
     </header>
 
-    <main class="px-3">
-      <h1 class="text-uppercase">godfathr</h1>
-      <p class="lead">
-        Full stack .NET web development for enterprise solutions, ecommerce and personal portfolios.
-      </p>
-      <p class="lead">
-        <img src="https://avatars.githubusercontent.com/u/17180852?v=4" style="border-radius: 50%;" />
-      </p>
-    </main>
+    <router-outlet></router-outlet>
 
     <footer class="mt-auto text-white-50">
       <p>https://github.com/godfathr &copy; 2022</p>
