@@ -4,24 +4,11 @@
       <div>
         <h3 class="float-md-start mb-0 text-uppercase">godfathr</h3>
         <nav class="nav nav-masthead justify-content-center float-md-end">
-          <a class="nav-link active" aria-current="page" href="/" routerLinkActive="active">
-            Home
-          </a>
-          <a class="nav-link" routerLink="/intro" routerLinkActive="active">
-            Intro
-          </a>
-          <a class="nav-link" routerLink="/featured" routerLinkActive="active">
-            Featured Work
-          </a>
-          <a class="nav-link" routerLink="/experience" routerLinkActive="active">
-            Tools & Experience
-          </a>
-          <a class="nav-link" routerLink="/about" routerLinkActive="active">
-            About
-          </a>
-          <a class="nav-link" routerLink="/find-me" routerLinkActive="active">
-            Find Me
-          </a>
+          <ng-container *ngFor="let p of pages; ">
+            <a [attr.aria-current]="p[0] === current ? 'page' : null" routerLinkActive="active" routerLink="/{{p[1]}}" class="nav-link">
+              {{p[0]}}
+            </a>
+          </ng-container>
         </nav>
       </div>
     </header>
