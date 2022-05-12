@@ -15,8 +15,6 @@ const routes: Routes = [
   { path: 'featured', component: FeaturedComponent },
   { path: 'find-me', component: FindMeComponent },
   { path: 'home', component: HomeComponent },
-  { path: 'intro', component: IntroComponent },
-
 ];
 
 @NgModule({

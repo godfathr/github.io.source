@@ -10,15 +10,15 @@ export class AppComponent implements OnInit {
   title = 'portfolio';
   pages: Array<[string, string]>;
   current: string = "featured";
+  year: number = new Date().getFullYear();
 
   constructor() {
 
     this.pages = [
       ["Home", "home"],
-      ["Intro", "intro"],
-      ["Featured Work", "featured"],
+      ["Featured", "featured"],
       ["Experience", "experience"],
-      ["About", "about"],
+      // ["About", "about"],
       ["Find-Me", "find-me"]
     ];
 
