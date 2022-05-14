@@ -6,10 +6,9 @@ import { ExperienceComponent } from './experience/experience.component';
 import { FeaturedComponent } from './featured/featured.component';
 import { FindMeComponent } from './find-me/find-me.component';
 import { HomeComponent } from './home/home.component';
-import { IntroComponent } from './intro/intro.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/', pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'featured', component: FeaturedComponent },
